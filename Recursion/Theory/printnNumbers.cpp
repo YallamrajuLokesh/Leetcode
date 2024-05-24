@@ -16,3 +16,24 @@ int main(){
     print(1,n);
     return 0;
 }
+
+
+//reverse n to 1
+#include<iostream>
+using namespace std;
+void print(int n){
+    int i=1;
+    if(i>n){
+        return;
+    }
+    cout<<n<<endl;
+    n--;
+    print(n);
+}
+int main(){
+     int n;
+    
+    cin>>n;
+    print(n);
+    return 0;
+}
